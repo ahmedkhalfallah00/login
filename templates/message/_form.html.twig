@@ -1,0 +1,8 @@
+{{ form_start(form) }}
+  {{ form_row(form.sujet, { 'attr':{'class': 'form-control'} }) }}
+  {{ form_row(form.message, { 'attr':{'class': 'form-control'} }) }}
+  {{ form_row(form.emetteur, { 'attr':{'class': 'form-control','value':app.user.username} }) }}
+  {{ form_row(form.recepteur, { 'attr':{'class': 'form-control'} }) }}
+  {{ form_row(form.date, { 'attr':{'class': 'form-control'} }) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

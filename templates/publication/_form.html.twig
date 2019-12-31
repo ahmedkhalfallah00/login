@@ -1,0 +1,11 @@
+
+<form action="doUpload" method="post" enctype="multipart/form-data">
+    <input type="hiddden" name="token" value="{{ csrf_token('upload')}}">
+    <div>
+    <label>Texte</label>
+    <input type="text" name="text">
+        <label>File to upload</label>
+        <input type="file" name="fichier">
+        </div>
+        <button type="submit">send</button>
+</form>
